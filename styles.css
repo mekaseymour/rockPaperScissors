@@ -6,6 +6,11 @@ body {
 
 h1 {
   color: #9c27b0;
+  cursor: default;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .page-section {
@@ -15,7 +20,7 @@ h1 {
 
 #header {
   position: absolute;
-  top: 30%;
+  top: 20%;
   width: 100%;
   margin: auto 0;
 }
@@ -54,6 +59,7 @@ h1 {
   background-color: #69f0ae;
   color: #6a1b9a;
   font-size: 1.1em;
+  margin-top: 1.5em;
 }
 
 #play-button:hover {
@@ -75,4 +81,29 @@ h1 {
 
 #play-selection-div {
   display: none;
+}
+
+#quit {
+  display: inline;
+  border: none;
+  color: #69f0ae;
+  background-color: #6a1b9a;
+  text-decoration: underline;
+  padding-top: 3.5em;
+}
+
+#quit-div {
+  text-align: center;
+}
+
+.game-commands {
+  color: #69f0ae;
+}
+
+.gifs {
+  width:100px; 
+  height:auto;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 1em;
 }

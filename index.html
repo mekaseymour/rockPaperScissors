@@ -1,9 +1,21 @@
- <div id="container">
+<!DOCTYPE HTML>
+<hmtl>
+  <head>
+    <title>Rock, Paper, Scissors</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+     <div id="container">
   <div id="first-div" class="page-section">
    <div id="header">
     <h1>
      Rock, Paper, Scissors
     </h1>
+    <div id="gifs-div">
+      <img src="https://imageshack.com/a/img923/1660/U9v9tH.gif" class="gifs">
+      <img src='https://imageshack.com/a/img923/4006/Z8XJ1p.gif' class="gifs">
+      <img src="https://imageshack.com/a/img924/9674/2uY2qh.gif" class="gifs">
+    </div>
     <button type="button" id="play-button">
       play
     </button>
@@ -16,14 +28,21 @@
     </div>
     <div id="game-commands-div">
       <button id="ready-button">ready</button>
+      <div id="commands-div"></div>
     </div>
     <div id="play-selection-div">
       <p style="color: #69f0ae; font-weight: lighter">choose one:</p>
       <button id="rock" class="selection-button">rock</button>
       <button id="paper" class="selection-button">paper</button>
       <button id="scissors" class="selection-button">scissors</button>
+      <div id="quit-div">
+        <button id="quit">quit</button>
+      </div>
     </div>
   </div>
  </div>
  
  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ <script src="main.js"></script>
+  </body>
+</html>
