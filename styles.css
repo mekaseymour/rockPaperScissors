@@ -20,7 +20,7 @@ button:hover {
 
 #header {
   position: absolute;
-  top: 20%;
+  top: 25%;
   width: 100%;
   margin: auto 0;
 }
@@ -69,6 +69,8 @@ button:hover {
 
 #score-div {
   height: 25%;
+  color: #69f0ae;
+  padding-top: 2em;
 }
 
 #ready-button {
@@ -83,7 +85,15 @@ button:hover {
   display: none;
 }
 
-#quit {
+#player-score {
+  text-align: left;
+}
+
+#computer-score {
+  text-align: right;
+}
+
+#quit, #play-again {
   display: inline;
   border: none;
   color: #69f0ae;
@@ -92,7 +102,11 @@ button:hover {
   padding-top: 3.5em;
 }
 
-#quit-div {
+#game-commands-div {
+  margin-top: 5em;
+}
+
+#end-of-game-div {
   text-align: center;
 }
 
@@ -101,9 +115,15 @@ button:hover {
 }
 
 .gifs {
-  width:100px; 
+  width:100px;
   height:auto;
   display: inline-block;
   vertical-align: middle;
   padding-right: 1em;
+}
+
+.gameImages {
+  height: auto;
+  width: 100px;
+  display: inline-block;
 }
