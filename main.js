@@ -17,8 +17,8 @@ const playAgainBtn = document.getElementById('play-again');
 const quitBtn = document.getElementById('quit');
 
 // GAME VARIABLES
-let newPlayerChoice;
-let newComputerChoice;
+let newPlayerChoice = '';
+let newComputerChoice = '';
 
 const gameCommands = [
 	'rock',
@@ -199,6 +199,8 @@ function makeResultsMessage(results) {
 }
 
 function restartGame() {
+	newPlayerChoice = '';
+	newComputerChoice = '';
 	commandsDiv.innerHTML = '';
   imagesDiv.innerHTML = '';
   playSelectionDiv.style.display = 'none';
