@@ -34,15 +34,15 @@ const gameChoices = [
 ];
 
 // create image elements
-let rockImage = document.createElement('img');
+const rockImage = document.createElement('img');
 rockImage.setAttribute('src', 'http://imageshack.com/a/img922/2549/fiGjnh.png');
 rockImage.className = 'gameImages';
 
-let paperImage = document.createElement('img');
+const paperImage = document.createElement('img');
 paperImage.setAttribute('src', 'http://imageshack.com/a/img924/92/Prz2TU.png');
 paperImage.className = 'gameImages';
 
-let scissorsImage = document.createElement('img');
+const scissorsImage = document.createElement('img');
 scissorsImage.setAttribute('src', 'http://imageshack.com/a/img923/2725/BqBABm.png');
 scissorsImage.className = 'gameImages';
 
@@ -110,7 +110,6 @@ rockBtn.addEventListener('click', () => {
 
 // handle paper button click
 paperBtn.addEventListener('click', () => {
-	console.log('paper button clicked');
 	let playerChoice = paperBtn.innerHTML;
   let computerChoice = makeComputerChoice();
   let playerMoveImage = getMoveImage(playerChoice);
@@ -131,7 +130,6 @@ paperBtn.addEventListener('click', () => {
 
 // handle scissors button click
 scissorsBtn.addEventListener('click', () => {
-	console.log('scissors btn clicked');
 	let playerChoice = scissorsBtn.innerHTML;
   let computerChoice = makeComputerChoice();
   let playerMoveImage = getMoveImage(playerChoice);
@@ -198,6 +196,7 @@ function makeResultsMessage(results) {
   return h2;
 }
 
+// clears page, player choice, and computer choice
 function restartGame() {
 	newPlayerChoice = '';
 	newComputerChoice = '';

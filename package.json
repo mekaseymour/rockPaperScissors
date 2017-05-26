@@ -1,0 +1,28 @@
+{
+  "name": "rockpaperscissors",
+  "version": "1.0.0",
+  "description": "a rock paper scissors game",
+  "main": "main.js",
+  "scripts": {
+    "test": "run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mekaseymour/rockPaperScissors.git"
+  },
+  "author": "Meka Seymour",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mekaseymour/rockPaperScissors/issues"
+  },
+  "homepage": "https://github.com/mekaseymour/rockPaperScissors#readme",
+  "devDependencies": {
+    "git-scripts": "^0.2.1",
+    "surge": "^0.19.0"
+  },
+  "git": {
+    "scripts": {
+      "pre-push": "surge --project ./ --domain tight-breakfast.surge.sh"
+    }
+  }
+}
