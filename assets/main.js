@@ -140,7 +140,7 @@ quitBtn.addEventListener('click', () => {
 
 // FUNCTIONS
 
-function flashWords(word) {
+const flashWords = word => {
   commandsDiv.innerHTML = '';
   let h1 = document.createElement('h1');
   h1.innerHTML = word;
@@ -151,38 +151,38 @@ function flashWords(word) {
     playSelectionDiv.style.display = 'block';
     endGameDiv.style.display = 'block';
   }
-}
+};
 
-function restyleBtn(selectedBtn) {
+const restyleBtn = selectedBtn => {
   selectedBtn.style.backgroundColor = '#69f0ae';
   selectedBtn.style.color = '#6a1b9a';
-}
+};
 
-function disableButtons(arrOfBtns) {
+const disableButtons = arrOfBtns => {
   arrOfBtns.forEach(btn => {
     btn.disabled = true;
   });
-}
+};
 
 // display image corresponding with move choice
-function getMoveImage(move) {
+const getMoveImage = move => {
   let moveImage;
   if (move === 'rock') moveImage = rockImage;
   else if (move === 'paper') moveImage = paperImage;
   else moveImage = scissorsImage;
   return moveImage;
-}
+};
 
 // makes results message and returns it's DOM element
-function makeResultsMessage(results) {
+const makeResultsMessage = results => {
   let h2 = document.createElement('h2');
   h2.className = 'game-commands';
   h2.innerHTML = results;
   return h2;
-}
+};
 
 // clears page, player choice, and computer choice
-function restartGame() {
+const restartGame = () => {
   playerNewChoice = '';
   computerNewChoice = '';
   commandsDiv.innerHTML = '';
@@ -195,18 +195,18 @@ function restartGame() {
     btn.style.backgroundColor = '#6a1b9a';
     btn.style.color = '#69f0ae';
   });
-}
+};
 
 // logic functions
 
-function makeComputerChoice() {
+const makeComputerChoice = () => {
   let randomNumber = Math.floor(Math.random() * 3);
   computerNewChoice = gameChoices[randomNumber];
   return computerNewChoice;
-}
+};
 
 // function that takes in the player's choice and the computer's choice and determines a winner
-function chooseWinner(playerNewChoice, computerNewChoice) {
+const chooseWinner = (playerNewChoice, computerNewChoice) => {
   let results = '';
   if (playerNewChoice === 'rock') {
     if (computerNewChoice === 'rock') {
@@ -235,4 +235,4 @@ function chooseWinner(playerNewChoice, computerNewChoice) {
   }
 
   return results;
-}
+};
