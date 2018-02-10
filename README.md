@@ -8,4 +8,6 @@ This game was originally created for a project with [Girls Who Code](https://gir
 
 You can play the game online [here](http://tight-breakfast.surge.sh/). Using static web publishing by [Surge](https://surge.sh/).
 
+Run locally by running `http-server`.
+
 ![alt text](banner.png)
