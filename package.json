@@ -24,5 +24,8 @@
     "scripts": {
       "pre-push": "surge --project ./ --domain tight-breakfast.surge.sh"
     }
+  },
+  "dependencies": {
+    "http-server": "^0.11.1"
   }
 }
